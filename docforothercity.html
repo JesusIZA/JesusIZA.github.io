@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<title>Olimp</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="styles/header.css">
+<link rel="stylesheet" type="text/css" href="styles/pop.css">
+<link rel="stylesheet" type="text/css" href="styles/menu.css">
+<link rel="stylesheet" type="text/css" href="styles/content.css">
+<link rel="stylesheet" type="text/css" href="styles/appeare.css">
+<link rel="stylesheet" type="text/css" href="styles/footer.css">
+<link rel="shortcut icon" href="images/icon.png">
+<!-- ******************************************HEADER****************************************** -->
+<header>
+	<img src="images/icon.png">
+	<h1>Olimp.UK</h1>
+	<span>
+		<div class="tel"></div>
+		<em>+380000000000</em>
+		<div class="email"></div>
+		<em>example@email.this</em>
+	</span>
+	<a href="#pop"></a>
+	<div id="fon"></div>
+</header>
+<!-- ******************************************POP****************************************** -->
+<span class="overlay" id="pop"></span>
+	<div class="popup">
+		<form action="#">
+			<input name="Name" placeholder="Name" id="name">
+			<input type="email" name="Email" placeholder="Email" id="email">
+			<input type="tel" name="Phone" placeholder="Phone number"  id="tel">
+			<input type="button" id="sub" value="Send" onclick="sendD()">
+		</form>
+		<a class="close" title="Закрити" href="#close"></a>
+	</div>
+<!-- ******************************************MENU****************************************** -->
+<div id="menu">
+	<ul>
+		<li><a href="newcardoc.html">Права впервые</a></li>
+		<li><a href="returncardoc.html">Востановление прав</a></li>
+		<li><a href="index.html">Назад на главную</a></li>
+	</ul>
+</div>
+<!-- ******************************************CONTENT****************************************** -->
+<div id="content">
+	<div class="about feed">
+		<h1>
+			СПРАВКА ПЕРЕСЕЛЕНЦА ДЛЯ ЖИТЕЛЕЙ ДОНЕЦКОЙ И ЛУГАНСКОЙ ОБЛАСТЕЙ
+		</h1>
+	</div>
+	<div class="about feed">
+		<div class="afterimg"><img src="images/ab4.jpg"></div>
+		<div class="text">
+			<p>
+				В это нелегкое время много граждан Украины столкнулось с проблемой вынужденного переселения и при этом  с Вас везде требуют справку переселенца: Вы не можете получать деньги на карту, открытую на временно оккупированной территории, не можете вклеить фото в паспорт или заменить его , не можете получить, заменить или восстановить водительское удостоверение и массу прочих мелких неприятностей.
+			</p>
+			<p>
+				Мы поможем оформить Вам справку переселенца всего за 1000 Гривен и 30 минут Вашего времени. 
+			</p>
+			<p>
+				В стоимость услуги входит: 
+			</p>
+			<ul>
+				<li>Консультация ведущего юриста;</li>
+				<li>Подготовка документов;</li>
+				<li>Сопровождение в гос. Органы для получения справки.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="about feed">
+		<h2>
+			Мы беремся за самые сложные случаи и всегда приносим результат! 
+		</h2>
+	</div>
+</div>
+<!-- ******************************************FOOTER****************************************** -->
+<footer>
+	<span>
+		<em>NeverSayDie/Evgen</em>
+	</span>
+	<span>
+		<em>UA Kyiv 2018</em>
+	</span>
+	<span>
+		<div class="tel"></div>
+		<em class="fem">+380000000000</em>
+	</span>
+	<span>
+		<div class="email"></div>
+		<em class="fem">example@email.this</em>
+	</span>
+</footer>
+
+<!-- ******************************************JS****************************************** -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
+</script>
+<script type="text/javascript" src="scripts/jquery.appear.js">
+</script>
+
+<script type='text/javascript'>
+	$(function() {
+		$(document.body).on('appear', '.feed', function(e, $affected) {
+			$(this).addClass("appeared");
+		});
+		$('.feed').appear({force_process: true});
+	});
+</script>

@@ -1,0 +1,13 @@
+/***appeare***/
+.feed {
+	opacity: .1;
+	transition: all 2s;
+	transform: translate(100%, 0);
+}
+.feed:nth-child(2n+1) {
+	transform: translate(-100%, 0);
+}
+.feed.appeared {
+	opacity: 1;
+	transform: translate(0, 0);
+}

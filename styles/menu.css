@@ -1,0 +1,32 @@
+
+/***********************************MENU***********************************/
+#menu {
+	background: rgba(255,215,0,.7);
+	color: black;
+}
+#menu ul {
+	list-style: none;
+	text-align: center;
+}
+#menu ul li {
+	display: inline-block;
+	width: 330px;
+	margin: 7px 15px;
+	transition: transform .3s;
+	text-align: left;
+}
+#menu a {
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+	display: block;
+}
+#menu a:hover {
+	text-shadow: 5px 5px 5px gold, -5px 5px 5px gold, 5px -5px 5px gold, -5px -5px 5px gold;
+}
+#menu li:hover {
+	transform: scale(1.03);
+}
+#menu li:active {
+	transform: scale(0.94);
+}

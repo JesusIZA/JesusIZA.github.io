@@ -1,0 +1,95 @@
+/***********************************POP************************************/
+/* Базові стилі шару затемнення і модального вікна */
+.overlay {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	display: none;
+	/* фон затемнення */
+	background: rgba(0, 0, 0, 0.65);
+	position: fixed; /* фіксований поцизионирование */
+	cursor: default; /* тип курсара */
+}
+/* активуємо шар затемнення */
+.overlay:target {
+	display: block;
+}
+/* стилі модального вікна */
+.popup {
+	top: 0;
+	right: 0;
+	font-size: 14px;
+	z-index: 20;
+	margin: 0;
+	width: 400px;
+	/* фіксоване позиціонування, вікно стабільно при прокрутці */
+	position: fixed;
+	padding: 15px;
+	border: 1px solid #383838;
+	background: #fefefe;
+
+	/* зовнішня тінь */
+	box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+	transform: translate(500px, 10px);
+	transition: transform 0.6s ease-out;
+}
+
+/* активуємо модальний блок */
+.overlay:target+.popup {
+	transform: translate(0, 10px);
+}
+
+/* формуємо кнопку закриття */
+.close {
+	text-decoration: none;
+	position: absolute;
+	top: -10px;
+	left: -10px;
+
+	width: 20px;
+	height: 20px;
+	border-radius: 15px;
+
+	padding: 0;
+
+	border: 2px solid #ccc;
+	background-color: rgba(61, 61, 61, 0.8);
+	box-shadow: 0px 0px 10px #000;
+	text-align: center;
+
+	transition: all ease .8s;
+}
+.close::before {
+	content: "X";
+	color: white;
+
+	display: block;
+	width: 20px;
+	height: 20px;
+
+	position: absolute;
+	top: 1px;
+}
+.close:hover {
+	background-color: rgba(252, 20, 0, 0.8);
+
+	transform: rotate(360deg);
+	transform-origin: center;
+}
+form {
+	display: block;
+	margin: 0 auto;
+	width: 400px;
+}
+input {
+	display: block;
+	margin: 10px auto;
+	width: 300px;
+	height: 30px;
+	font-size: 17px;
+}
+#sub {
+	width: 308px;
+}

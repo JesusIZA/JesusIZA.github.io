@@ -1,0 +1,36 @@
+/***********************************FOOTER***********************************/
+footer {
+	background: rgba(0,0,0,.85);
+	color: rgb(255, 215, 0);
+	margin: 0 auto;
+	padding: 7px;
+	text-align: center;
+}
+footer span {
+	margin: 0 10px;
+	display: inline-block;
+	width: 200px;
+	position: relative;
+}
+footer span div {
+	display: inline-block;
+}
+footer span .fem {
+	margin-left: 37px;
+}
+footer span .tel, footer span .email {
+	position: absolute;
+	top: -6px;
+}
+.tel, .email {
+	width: 32px;
+	height: 32px;
+	border-radius: 5px;
+	background: url(../images/logos.jpg);
+}
+.tel {
+	background-position: 294px 151px;
+}
+.email {
+	background-position: 249px 106px;
+}

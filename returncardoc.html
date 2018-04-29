@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<title>Olimp</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="styles/header.css">
+<link rel="stylesheet" type="text/css" href="styles/pop.css">
+<link rel="stylesheet" type="text/css" href="styles/menu.css">
+<link rel="stylesheet" type="text/css" href="styles/content.css">
+<link rel="stylesheet" type="text/css" href="styles/appeare.css">
+<link rel="stylesheet" type="text/css" href="styles/footer.css">
+<link rel="shortcut icon" href="images/icon.png">
+<!-- ******************************************HEADER****************************************** -->
+<header>
+	<img src="images/icon.png">
+	<h1>Olimp.UK</h1>
+	<span>
+		<div class="tel"></div>
+		<em>+380000000000</em>
+		<div class="email"></div>
+		<em>example@email.this</em>
+	</span>
+	<a href="#pop"></a>
+	<div id="fon"></div>
+</header>
+<!-- ******************************************POP****************************************** -->
+<span class="overlay" id="pop"></span>
+	<div class="popup">
+		<form action="#">
+			<input name="Name" placeholder="Name" id="name">
+			<input type="email" name="Email" placeholder="Email" id="email">
+			<input type="tel" name="Phone" placeholder="Phone number"  id="tel">
+			<input type="button" id="sub" value="Send" onclick="sendD()">
+		</form>
+		<a class="close" title="Закрити" href="#close"></a>
+	</div>
+<!-- ******************************************MENU****************************************** -->
+<div id="menu">
+	<ul>
+		<li><a href="newcardoc.html">Права впервые</a></li>
+		<li><a href="index.html">Назад на главную</a></li>
+		<li><a href="docforothercity.html">Справка переселенца</a></li>
+	</ul>
+</div>
+<!-- ******************************************CONTENT****************************************** -->
+<div id="content">
+	<div class="about feed">
+		<h1>
+			Замена или восстановление водительского удостоверения
+		</h1>
+	</div>
+	<div class="about feed">
+		<div class="afterimg"><img src="images/ab3.jpg"></div>
+		<div class="text">
+			<p>
+				Если у Вас возникла необходимость заменить или восстановить водительское  удостоверение, Вам нужно приготовить:
+			</p>
+			<ul>
+				<li>Паспорт гражданина Украины;</li>
+				<li>Идентификационный код;</li>
+				<li>Две фотографии 3,5 х 4,5 см;</li>
+				<li>Свидетельство о браке/смене имени/фамилии (при наличии);</li>
+				<li>Экзаменационная карта водителя (если нет, доплата);</li>
+				<li>Медицинская справка (или доплата);</li>
+				<li>Водительское удостоверение или его копия (если удостоверение утеряно);</li>
+				<li>Загран паспорт (если есть);</li>
+				<li>Два часа Вашего времени.</li>
+
+			</ul>
+		</div>
+	</div>
+	<div class="about feed">
+		<h4>
+			Стоимость данной услуги составляет всего 1999 грн. 
+		</h4>
+	</div>
+</div>
+<!-- ******************************************FOOTER****************************************** -->
+<footer>
+	<span>
+		<em>NeverSayDie/Evgen</em>
+	</span>
+	<span>
+		<em>UA Kyiv 2018</em>
+	</span>
+	<span>
+		<div class="tel"></div>
+		<em class="fem">+380000000000</em>
+	</span>
+	<span>
+		<div class="email"></div>
+		<em class="fem">example@email.this</em>
+	</span>
+</footer>
+
+<!-- ******************************************JS****************************************** -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
+</script>
+<script type="text/javascript" src="scripts/jquery.appear.js">
+</script>
+
+<script type='text/javascript'>
+	$(function() {
+		$(document.body).on('appear', '.feed', function(e, $affected) {
+			$(this).addClass("appeared");
+		});
+		$('.feed').appear({force_process: true});
+	});
+</script>
