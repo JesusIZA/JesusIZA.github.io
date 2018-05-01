@@ -1,0 +1,354 @@
+
+@media only screen and (max-height: 905px) {
+	body {
+		background: fixed rgba(0,0,0,.7) url(../images/fon.jpg) center no-repeat;
+	}
+}
+@media only screen and (max-width: 1266px) {
+	/*header {
+		background: red;
+	}*/
+	#content .about {
+		width: 1000px;
+	}
+	#content .about .afterimg, #content .about .afterimg img {
+		width: 270px;
+		height: 270px;
+	}
+	#content .about .afterimg::after {
+		width: 270px;
+		height: 270px;
+	}
+	#content .about .text {
+		width: 640px;
+		font-size: 23px;
+		margin: 10px 15px;
+	}
+
+	header h1 {
+		font-size: 100px;
+		line-height: 130px;
+	}
+	header span em {
+		display: block;
+		font-size: 19px;
+		line-height: 40px;
+		padding: 0;
+		color: black;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	#menu a {
+		font-size: 27px;
+		margin: 5px 5px;
+		line-height: 20px;
+	}
+}
+
+@media only screen and (max-width: 1066px) {
+	/*header {
+		background: orange;
+	}*/
+	#content h1 {
+		font-size: 27px;
+	}
+	#content .about {
+		width: 900px;
+	}
+	#content .about .afterimg, #content .about .afterimg img {
+		width: 240px;
+		height: 240px;
+	}
+	#content .about .afterimg::after {
+		width: 240px;
+		height: 240px;
+	}
+	#content .about .text {
+		width: 600px;
+		font-size: 21px;
+		margin: 10px;
+	}
+	h2 {
+		font-size: 27px;
+	}
+	#menu a {
+		font-size: 22px;
+		margin: 5px 5px;
+		line-height: 17px;
+	}
+
+}
+/**Planshet**/
+@media only screen and (max-width: 950px) {
+	/*header {
+		background: green;
+	}*/
+	header h1 {
+		display: block;
+		line-height: 90px;
+		font-size: 90px;
+	}
+	#content h1 {
+		font-size: 24px;
+	}
+	#content .about {
+		width: 740px;
+	}
+	#content .about .afterimg, #content .about .afterimg img {
+		width: 200px;
+		height: 200px;
+	}
+	#content .about .afterimg::after {
+		width: 200px;
+		height: 200px;
+	}
+	#content .about .text {
+		width: 500px;
+		font-size: 21px;
+		margin: 10px;
+	}
+	header span {
+		display: block;
+		position: relative;
+		margin: 20px auto;
+		left: 0;
+		top: 0;
+		width: 440px;
+	}
+	header span em {
+		display: inline-block;
+		font-size: 19px;
+		line-height: 40px;
+		padding: 0;
+		color: gold;
+		margin-left: 50px;
+	}
+	header a {
+		text-decoration: none;
+		z-index: 2;
+		position: absolute;
+		right: 13px;
+		top: 13px;
+		border-radius: 50%;
+		height: 56px;
+		width: 56px;
+		background: url(../images/tel.png) center no-repeat;
+		background-size: 56px;
+		border: 1px solid black;
+		box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+	}
+	header a:hover {
+		box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.7);
+	}
+	header a:active {
+		box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+		top: 14px;
+	}
+	header span .tel {
+		display: inline-block;
+		position: absolute;
+		left: 10px;
+	}
+	header span .email {
+		display: inline-block;
+		position: absolute;
+		left: 200px;
+		top: 5px;
+	}
+	#fon {
+		display: none;
+	}
+
+	#menu a {
+		font-size: 20px;
+		margin: 5px 0;
+		line-height: 14px;
+	}
+	footer span em, footer span {
+		display: block;
+		margin: 5px auto;
+	}
+	footer span div {
+		display: none;
+	}
+	footer span .fem {
+		margin-left: 0;
+	}
+}
+@media only screen and (max-width: 830px) {
+	/*header {
+		background: blue;
+	}*/
+	header h1 {
+		line-height: 70px;
+		text-align: left;
+		font-size: 85px;
+	}
+	#content .about {
+		width: 600px;
+	}
+	#content .about .afterimg, #content .about .afterimg img {
+		display: none;
+	}
+	#content .about .afterimg::after {
+		display: none;
+	}
+	#content .about .text {
+		width: 580px;
+		font-size: 21px;
+		margin: 10px;
+	}
+	#menu a {
+		font-size: 20px;
+		margin: 0;
+		padding: 0;
+		line-height: 16px;
+	}
+	#menu ul li {
+		margin: 7px 10px;
+	}
+}
+@media only screen and (max-width: 680px) {
+	/*header {
+		background: grey;
+	}*/
+	header h1 {
+		line-height: 50px;
+		font-size: 70px;
+		text-align: left;
+	}
+	#content h1 {
+		font-size: 21px;
+	}
+	header span {
+		margin: 10px;
+	}
+	#content .about {
+		width: 500px;
+	}
+	#content .about .text {
+		width: 480px;
+		font-size: 18px;
+		margin: 7px;
+	}
+}
+/**tel**/
+@media only screen and (max-width: 560px) {
+	/*header {
+		background: white;
+	}*/
+	header span {
+		margin: 10px;
+	}
+	header span .tel {
+		display: block;
+		position: absolute;
+		left: 10px;
+	}
+	header span .email {
+		display: block;
+		position: absolute;
+		left: 10px;
+		top: 45px;
+	}
+	header span em {
+		display: block;
+	}
+	header a {
+		top: 90px;
+	}
+	header a:active {
+		top: 91px;
+	}
+	#menu a {
+		display: block;
+		font-size: 27px;
+		margin: 0;
+		padding: 0;
+		line-height: 30px;
+		text-align: center;
+	}
+	#menu ul li {
+		margin: 7px 10px;
+		display: block;
+		text-align: center;
+	}
+	#menu ul {
+		margin: 0;
+		text-align: center;
+		padding-left: 0;
+	}
+	#content .about {
+		width: 420px;
+	}
+	#content .about .text {
+		width: 405px;
+		font-size: 16px;
+		margin: 3px;
+	}
+	.popup {
+		font-size: 14px;
+		width: 300px;
+		padding: 15px;
+		border-top-left-radius: 20px;
+	}
+	form {
+		width: 270px;
+	}
+	input {
+		width: 270px;
+		font-size: 14px;
+	}
+	#sub {
+		width: 200px;
+	}
+	.close {
+		top: 0;
+		left: 0;
+	}
+}
+@media only screen and (max-width: 460px) {
+	/*header {
+		background: lime;
+	}*/
+	header h1 {
+		line-height: 50px;
+		font-size: 50px;
+		text-align: left;
+	}
+	#content h1 {
+		font-size: 18px;
+	}
+	header span em {
+		font-size: 17px;
+	}
+	header a {
+		top: 77px;
+	}
+	header a:active {
+		top: 78px;
+	}#menu ul {
+		padding: 5px;
+		margin: 5px;
+	}
+	#menu a {
+		font-size: 22px;
+		line-height: 30px;
+		border: 2px solid maroon;
+	}
+	#content .about {
+		width: 310px;
+		padding: 0;
+	}
+	#content .about .text {
+		width: 305px;
+		font-size: 15px;
+		margin: 2px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	/*header {
+		background: aqua;
+	}*/
+}

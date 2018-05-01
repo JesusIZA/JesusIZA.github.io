@@ -17,13 +17,11 @@ header h1 {
 	line-height: 130px;
 	margin: 0;
 	padding: 0;
-	position: absolute;
-	top: 23px;
 }
 header span {
 	position: absolute;
 	right: 100px;
-	top: 48px;
+	top: 33px;
 	z-index: 2;
 }
 header span em {
@@ -38,7 +36,7 @@ header a {
 	z-index: 2;
 	position: absolute;
 	right: 20px;
-	top: 59px;
+	top: 44px;
 	border-radius: 50%;
 	height: 56px;
 	width: 56px;
@@ -52,7 +50,7 @@ header a:hover {
 }
 header a:active {
 	box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
-	top: 60px;
+	top: 46px;
 }
 header span .tel {
 	position: absolute;
@@ -71,6 +69,6 @@ header span .email {
 	border-radius: 10px 0 0 10px;
 	background: rgba(255,215,0,.5);
 	right: 0;
-	top: 40px;
+	top: 25px;
 	z-index: 1;
 }

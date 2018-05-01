@@ -10,8 +10,7 @@
 }
 #menu ul li {
 	display: inline-block;
-	width: 330px;
-	margin: 7px 15px;
+	margin: 7px 37px;
 	transition: transform .3s;
 	text-align: left;
 }
