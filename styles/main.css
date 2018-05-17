@@ -3,7 +3,7 @@ body {
 	margin: 0;
 	font-size: 130px;
 	/*font-family: Sans;*/
-	background: #aaa;
+	background: #aaa url(../images/fon1.jpg);
 	overflow: visible;
 	animation-name: startall;
 	animation-duration: 2s;
@@ -107,7 +107,7 @@ body::scrollbar {
 	}
 }
 header {
-	background: rgba(37, 114, 237, .5);
+	background: rgba(37, 114, 237, .92);
 	text-align: center;
 	position: relative;
 }
@@ -154,7 +154,7 @@ header:hover img {
 }
 footer {
 	font-size: .14em;
-	background: rgba(37, 114, 237, .3);
+	background: rgba(37, 114, 237, .85);
 	padding: 20px 50px;
 }
 footer span {
