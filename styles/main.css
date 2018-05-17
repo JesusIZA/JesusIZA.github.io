@@ -93,17 +93,17 @@ body::scrollbar {
 		width: 650px;
 	}
 	75% {
-		transform: translate(0, -265px) scale(0.18);
+		transform: translate(0, -96px) scale(0.18);
 		opacity: 1;
 		width: 650px;
 	}
 	99% {
-		transform: translate(0, -265px) scale(0.18);
+		transform: translate(0, -96px) scale(0.18);
 		opacity: .1;
 		width: 650px;
 	}
 	100% {
-		transform: translate(0, -265px) scale(0.18);
+		transform: translate(0, -96px) scale(0.18);
 		width: 0;
 		opacity: 0;
 	}
@@ -112,6 +112,7 @@ header {
 	background: rgba(255, 255, 255, .9);
 	text-align: center;
 	position: relative;
+	padding: 170px 20px;
 }
 header img, header h1 {
 	display: block;
