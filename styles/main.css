@@ -3,7 +3,7 @@ body {
 	margin: 0;
 	font-size: 130px;
 	/*font-family: Sans;*/
-	background: #aaa url(../images/fon1.jpg);
+	background: url(../images/fon1.jpg) #aaa;
 	overflow: visible;
 	animation-name: startall;
 	animation-duration: 2s;
