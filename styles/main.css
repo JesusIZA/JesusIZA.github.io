@@ -179,7 +179,24 @@ footer em, footer p{
 	display: block;
 }
 footer img {
+	display: block;
+	margin: 0 auto;
 	width: 70px;
+	animation-name: footeranim;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	transform-origin: 50% -50px;
+}
+@keyframes footeranim {
+	0% {
+		transform: rotate(-20deg);
+	}
+	50% {
+		transform: rotate(20deg);
+	}
+	100% {
+		transform: rotate(-20deg);
+	}
 }
 
 @font-face {
