@@ -1,0 +1,185 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 130px;
+	/*font-family: Sans;*/
+	background: #aaa;
+	overflow: visible;
+	animation-name: startall;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+body::-webkit-scrollbar { 
+    display: none; 
+}
+body::-moz-scrollbar { 
+    display: none; 
+}
+body::-ms-scrollbar { 
+    display: none; 
+}
+body::-o-scrollbar { 
+    display: none; 
+}
+body::scrollbar { 
+    display: none; 
+}
+#start {
+	display: block;
+	top: 0;
+	position: absolute;
+	width: 0;
+	height: 0;
+	text-align: center;
+	animation-name: start;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+@keyframes startall {
+	0% {
+		overflow: hidden;
+	}
+	99% {
+		overflow: hidden;
+	}
+	100% {
+		overflow: visible;
+	}
+}
+@keyframes start {
+	0% {
+		background: black;
+		width: 100%;
+		height: 100%;
+	}
+	50% {
+		background: rgba(37, 114, 237, 1);
+		width: 100%;
+		height: 100%;
+	}
+	75% {
+		background: rgba(37, 114, 237, .9);
+		width: 100%;
+		height: 100%;
+	}
+	99% {
+		background: rgba(37, 114, 237, 0);
+		width: 100%;
+		height: 100%;
+	}
+	100% {
+		background: rgba(37, 114, 237, 0);
+		width: 0;
+		height: 0;
+	}
+}
+#start img {
+	opacity: 0;
+	width: 0;
+	margin: 0 auto;
+	animation-name: startimg;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+}
+@keyframes startimg {
+	0% {
+		opacity: 0;
+		width: 650px;
+	}
+	50% {
+		opacity: 1;
+		width: 650px;
+	}
+	75% {
+		transform: translate(0, -265px) scale(0.18);
+		opacity: 1;
+		width: 650px;
+	}
+	99% {
+		transform: translate(0, -265px) scale(0.18);
+		opacity: .1;
+		width: 650px;
+	}
+	100% {
+		transform: translate(0, -265px) scale(0.18);
+		width: 0;
+		opacity: 0;
+	}
+}
+header {
+	background: rgba(37, 114, 237, .5);
+	text-align: center;
+	position: relative;
+}
+header img, header h1 {
+	display: block;
+	margin: 0 auto;
+}
+header img {
+	width: 130px;
+	transition: all 1s;
+}
+header h1 {
+	font-size: 1em;
+	line-height: 200px;
+	font-family: Stamp;
+}
+header #anim, header #anim2 {
+	margin-bottom: -130px;
+	transition: all 1s;
+	opacity: 0;
+}
+header:hover #anim {
+	transform: translate(200%, 0);
+	opacity: 1;
+}
+header:hover #anim2 {
+	transform: translate(-200%, 0);
+	opacity: 1
+}
+header:hover img {
+	transform: scale(1.5);
+}
+
+
+#content {
+	text-align: center;
+}
+#content span {
+	display: inline-block;
+	width: 600px;
+	height: 900px;
+	background: grey;
+	margin: 20px;
+}
+footer {
+	font-size: .14em;
+	background: rgba(37, 114, 237, .3);
+	padding: 20px 50px;
+}
+footer span {
+	display: inline-block;
+	float: left;
+}
+footer span:last-child {
+	float: right;
+}
+footer::after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	padding: 0;
+	margin: 0;
+}
+footer em, footer p{
+	display: block;
+}
+footer img {
+	width: 70px;
+}
+
+@font-face {
+	font-family: Stamp;
+	src: url(../fonts/Capture_it.ttf);
+}

@@ -1,112 +1,39 @@
 <!DOCTYPE html>
-
-<title>Olimp</title>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="styles/style.css">
-<link rel="stylesheet" type="text/css" href="styles/header.css">
-<link rel="stylesheet" type="text/css" href="styles/pop.css">
-<link rel="stylesheet" type="text/css" href="styles/menu.css">
-<link rel="stylesheet" type="text/css" href="styles/content.css">
-<link rel="stylesheet" type="text/css" href="styles/appeare.css">
-<link rel="stylesheet" type="text/css" href="styles/footer.css">
-<link rel="stylesheet" type="text/css" href="styles/addaptive.css">
-<link rel="shortcut icon" href="images/icon.png">
-
-<!-- ******************************************HEADER****************************************** -->
-<header>
-	<h1>ЮК Олимп</h1>
-	<span>
-		<div class="tel"></div>
-		<em>+380000000000</em>
-		<div class="email"></div>
-		<em>example@email.this</em>
-	</span>
-	<a href="#pop"></a>
-	<div id="fon"></div>
-</header>
-<!-- ******************************************POP****************************************** -->
-<span class="overlay" id="pop"></span>
-	<div class="popup">
-		<form action="#">
-			<input name="Name" placeholder="Name" id="name">
-			<input type="email" name="Email" placeholder="Email" id="email">
-			<input type="tel" name="Phone" placeholder="Phone number"  id="tel">
-			<input type="button" id="sub" value="Call me" onclick="sendD()">
-		</form>
-		<a class="close" title="Закрити" href="#close"></a>
+<html>
+<head>
+	<title>NeverSayDie.JR</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="shortcut icon" href="images/logo3.png">
+</head>
+<body>
+	<header>
+		<img id="anim" src="images/logo2.1.png">
+		<img id="anim2" src="images/logo2.1.png">
+		<img src="images/logo2.1.png">
+		<h1>Never Say Die</h1>
+	</header>
+	<div id="content">
+		<span id="s1">Text</span>
+		<span id="s2">Text</span>
 	</div>
-<!-- ******************************************MENU****************************************** -->
-<div id="menu">
-	<ul>
-		<li><a href="newcardoc.html">Права впервые</a></li>
-		<li><a href="returncardoc.html">Востановление прав</a></li>
-		<li><a href="docforothercity.html">Справка переселенца</a></li>
-	</ul>
-</div>
-<!-- ******************************************CONTENT****************************************** -->
-<div id="content">
-	<div class="about feed">
-		<div class="afterimg"><img src="images/ab1.jpg"></div>
-		<div class="text">
-			<p>
-				Водительское удостоверение – это документ, предоставляющий право на управление транспортными средствами соответствующих категорий. С 2014 года в Украине было введено удостоверение водителя европейского образца. Данное удостоверение изготавливается с помощью новых технологий и фотография не вклеивается, а печатается  и так же вносится электронная подпись.
-			</p>
-		</div>
+	<footer>
+		<span id="contacts">
+			<p>Emails:</p>
+			<em>testemilnevergood@goo.ua</em>
+			<em>testemilnevergood@goo.ua</em>
+			<p>Tels:</p>
+			<em>+380 96 487 45 65</em>
+			<em>+380 96 487 45 64</em>
+		</span>
+		<span id="about">
+			<em>2018 Kiev UA</em>
+			<em>NeverSauDie.JR</em>
+			<img src="images/logo.png">
+		</span>
+	</footer>
+	<div id="start">
+		<img src="images/logo3.png">
 	</div>
-	<div class="about feed">
-		<div class="afterimg"><img src="images/ab2.jpg"></div>
-		<div class="text">
-			<p>
-				Новый, усовершенствованный образец водительского удостоверения позволит Вам путешествовать на собственном или арендованном автомобиле по странам ЕС и многих других в течение тридцати лет с момента получения.
-			</p>
-		</div>
-	</div>
-	<div class="about feed">
-		<div class="afterimg"><img src="images/ab3.jpg"></div>
-		<div class="text">
-			<p>
-				В наш век время на вес золота и мы, понимая это, предлагаем Вам наши услуги по получению водительского удостоверения с нуля так и замене с восстановлением в кратчайшие сроки. 
-			</p>
-		</div>
-	</div>
-	<div class="about feed">
-		<div class="afterimg"><img src="images/ab4.jpg"></div>
-		<div class="text">
-			<p>
-				Обратившись к нам, Вы получаете гарантию на результат, конфиденциальность и максимально возможную оперативность при предоставлении услуг. 
-			</p>
-		</div>
-	</div>
-</div>
-<!-- ******************************************FOOTER****************************************** -->
-<footer>
-	<span class="hid">
-		<em>NeverSayDie/Evgen</em>
-	</span>
-	<span class="hid">
-		<em>UA Kyiv 2018</em>
-	</span>
-	<span>
-		<div class="tel"></div>
-		<em class="fem">+380000000000</em>
-	</span>
-	<span>
-		<div class="email"></div>
-		<em class="fem">example@email.this</em>
-	</span>
-</footer>
-
-<!-- ******************************************JS****************************************** -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js">
-</script>
-<script type="text/javascript" src="scripts/jquery.appear.js">
-</script>
-
-<script type='text/javascript'>
-	$(function() {
-		$(document.body).on('appear', '.feed', function(e, $affected) {
-			$(this).addClass("appeared");
-		});
-		$('.feed').appear({force_process: true});
-	});
-</script>
+</body>
+</html>
