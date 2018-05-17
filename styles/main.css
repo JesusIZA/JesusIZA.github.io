@@ -3,7 +3,9 @@ body {
 	margin: 0;
 	font-size: 130px;
 	/*font-family: Sans;*/
-	background: url(../images/fon1.jpg) #aaa;
+	background: url(../images/fon2.jpg) #aaa;
+	background-size: 100%;
+	background-attachment: fixed;
 	overflow: visible;
 	animation-name: startall;
 	animation-duration: 2s;
@@ -53,22 +55,22 @@ body::scrollbar {
 		height: 100%;
 	}
 	50% {
-		background: rgba(37, 114, 237, 1);
+		background: rgba(255, 255, 255, 1);
 		width: 100%;
 		height: 100%;
 	}
 	75% {
-		background: rgba(37, 114, 237, .9);
+		background: rgba(255, 255, 255, .9);
 		width: 100%;
 		height: 100%;
 	}
 	99% {
-		background: rgba(37, 114, 237, 0);
+		background: rgba(255, 255, 255, 0);
 		width: 100%;
 		height: 100%;
 	}
 	100% {
-		background: rgba(37, 114, 237, 0);
+		background: rgba(255, 255, 255, 0);
 		width: 0;
 		height: 0;
 	}
@@ -107,7 +109,7 @@ body::scrollbar {
 	}
 }
 header {
-	background: rgba(37, 114, 237, .92);
+	background: rgba(255, 255, 255, .9);
 	text-align: center;
 	position: relative;
 }
@@ -149,12 +151,12 @@ header:hover img {
 	display: inline-block;
 	width: 600px;
 	height: 900px;
-	background: grey;
+	background: rgba(255, 255, 255, .5);
 	margin: 20px;
 }
 footer {
 	font-size: .14em;
-	background: rgba(37, 114, 237, .85);
+	background: rgba(255, 255, 255, .8);
 	padding: 20px 50px;
 }
 footer span {
