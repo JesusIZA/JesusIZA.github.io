@@ -1,0 +1,11 @@
+.start {
+	height: 50px;
+	width: 0;
+	opacity: 0;
+}
+.run {
+	transition: width 1s;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+}

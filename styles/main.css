@@ -108,6 +108,7 @@ body::scrollbar {
 		opacity: 0;
 	}
 }
+/**********************************HEADER*********************************/
 header {
 	background: rgba(255, 255, 255, .9);
 	text-align: center;
@@ -143,18 +144,44 @@ header:hover #anim2 {
 header:hover img {
 	transform: scale(1.5);
 }
-
-
+/**********************************CONTENT*********************************/
 #content {
 	text-align: center;
 }
-#content span {
-	display: inline-block;
-	width: 600px;
-	height: 900px;
-	background: rgba(255, 255, 255, .5);
-	margin: 20px;
+#content div p {
+	font-size: .6em;
+	font-family: Chunkfive;
+	background: rgba(0, 0, 0, .9);
+	color: white;
+	margin: 10px 0;
+	margin-top: 50px;
+	height: 200px;
+	line-height: 200px;
 }
+#content div p#course{
+	background: rgba(255, 255, 255, .9);
+	color: black;
+}
+#content ul {
+	list-style: none;
+	font-size: .4em;
+	font-family: PTS56F;
+	margin: 0;
+	padding: 0;
+}
+#content ul li{
+	margin: 10px 0;
+	height: 80px;
+}
+#content ul.dev li{
+	background: rgba(0, 0, 0, .5);
+	color: rgba(255, 255, 255, .8);
+}
+#content ul.course li{
+	background: rgba(255, 255, 255, .5);
+	color: rgba(0, 0, 0, .8);
+}
+/**********************************FOOTER*********************************/
 footer {
 	font-size: .14em;
 	background: rgba(255, 255, 255, .8);
@@ -198,8 +225,15 @@ footer img {
 		transform: rotate(-20deg);
 	}
 }
-
 @font-face {
 	font-family: Stamp;
 	src: url(../fonts/Capture_it.ttf);
+}
+@font-face {
+	font-family: Chunkfive;
+	src: url(../fonts/Chunkfive.otf);
+}
+@font-face {
+	font-family: PTS56F;
+	src: url(../fonts/PTS56F.ttf);
 }
