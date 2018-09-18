@@ -5,7 +5,7 @@
 	opacity: 0;
 }
 .run {
-	transition: width 5s, font-size 5s;
+	transition: width 1s, font-size 1s;
 	height: 80px;
 	line-height: 80px;
 	width: 100%;
