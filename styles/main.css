@@ -160,10 +160,7 @@ header:hover img {
 	height: 200px;
 	line-height: 200px;
 }
-#content div p#course{
-	background: rgba(255, 255, 255, .9);
-	color: black;
-}
+
 #content ul {
 	list-style: none;
 	font-size: .4em;
@@ -175,14 +172,11 @@ header:hover img {
 	margin: 10px 0;
 	height: 80px;
 }
-#content ul.dev li{
+#content ul li{
 	background: rgba(0, 0, 0, .5);
 	color: rgba(255, 255, 255, .8);
 }
-#content ul.course li{
-	background: rgba(255, 255, 255, .5);
-	color: rgba(0, 0, 0, .8);
-}
+
 /**********************************FOOTER*********************************/
 footer {
 	font-size: .14em;
