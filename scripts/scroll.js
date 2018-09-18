@@ -3,18 +3,19 @@ $(function(){
 	console.log(elements);
 	for (var i = 0; i < elements.length; i++) {
 		$(elements[i]).addClass('start');
-		$(elements[i]).on("click", function(event){
+		$(elements[i]).on("mouseenter", function(event){
 			$(event.target).toggleClass("start run");
-			console.log($(event.target).html());
-		})
+		});
 	}
 
 	$(document).scroll(function(){
 		for (var i = 0; i < elements.length; i++) {
 			if ($(document).scrollTop() + $(window).height() > $(elements[i]).offset().top &&
 				$(document).scrollTop() - $(elements[i]).offset().top < $(elements[i]).height()) {
-				$(elements[i]).click();
-				$(elements[i]).off('click');
+				$(elements[i]).mouseenter();
+				$(elements[i]).off('mouseenter');
+				elements.splice(i,i+1);
+				break;
 			}
 		}
 	});
