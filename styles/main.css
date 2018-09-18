@@ -148,8 +148,10 @@ header:hover img {
 #content {
 	text-align: center;
 }
-#content div p {
+#content div {
 	font-size: .6em;
+}
+#content div p {
 	font-family: Chunkfive;
 	background: rgba(0, 0, 0, .9);
 	color: white;
