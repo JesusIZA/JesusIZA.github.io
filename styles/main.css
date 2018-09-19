@@ -174,7 +174,10 @@ header:hover img {
 	margin: 10px 0;
 	height: 100px;
 	line-height: 100px;
+	background: rgba(0, 0, 0, .5);
 	background: -webkit-linear-gradient(right, transparent, rgba(0, 0, 0, .5), transparent);
+	background: -moz-linear-gradient(right, transparent, rgba(0, 0, 0, .5), transparent);
+	background: -o-linear-gradient(right, transparent, rgba(0, 0, 0, .5), transparent);
 	background: linear-gradient(right, transparent, rgba(0, 0, 0, .5), transparent);
 	color: rgba(255, 255, 255, .8);
 }
