@@ -1,7 +1,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	font-size: 130px;
+	font-size: 0;
 	/*font-family: Sans;*/
 	background: url(../images/fon2.jpg) white;
 	background-size: 100%;
@@ -114,6 +114,7 @@ header {
 	text-align: center;
 	position: relative;
 	padding: 170px 20px;
+	font-size: 130px;
 }
 header img, header h1 {
 	display: block;
@@ -147,6 +148,7 @@ header:hover img {
 /**********************************CONTENT*********************************/
 #content {
 	text-align: center;
+	font-size: 130px;
 }
 #content div {
 	font-size: .6em;
@@ -163,23 +165,23 @@ header:hover img {
 
 #content ul {
 	list-style: none;
-	font-size: .4em;
+	font-size: .5em;
 	font-family: PTS56F;
 	margin: 0;
 	padding: 0;
 }
 #content ul li{
 	margin: 10px 0;
-	height: 80px;
-}
-#content ul li{
-	background: rgba(0, 0, 0, .5);
+	height: 100px;
+	line-height: 100px;
+	background: -webkit-linear-gradient(right, transparent, rgba(0, 0, 0, .5), transparent);
+	background: linear-gradient(right, transparent, rgba(0, 0, 0, .5), transparent);
 	color: rgba(255, 255, 255, .8);
 }
 
 /**********************************FOOTER*********************************/
 footer {
-	font-size: .14em;
+	font-size: 17px;
 	background: rgba(255, 255, 255, .8);
 	padding: 20px 50px;
 }

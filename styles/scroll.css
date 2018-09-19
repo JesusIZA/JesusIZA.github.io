@@ -1,13 +1,12 @@
-.start {
-	font-size: 1px;
-	height: 50px;
-	width: 100px;
-	opacity: 0;
+.scroll {
+	transition: all 1.5s;
+	transform-origin: top;
 }
-.run {
-	transition: width 2s, font-size 2s;
-	height: 80px;
-	line-height: 80px;
-	width: 100%;
-	opacity: 1;
+.hiden {
+	transform: rotateX(-90deg);
+	
+}
+.showed {
+	transform: rotateX(0);
+	
 }

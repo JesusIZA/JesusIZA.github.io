@@ -1,26 +1,23 @@
 $(function(){
 	if($(window).height() < $(window).width()){
-		var elements = $('.show');
-		for (var i = 0; i < elements.length; i++) {
-			$(elements[i]).addClass('start');
-			$(elements[i]).on("click", function(event){
-				$(event.target).toggleClass("start run");
-			});
+		var elems = $('.scroll');
+		for (var i = 0; i < elems.length; i++) {
+			$(elems[i]).addClass('hiden');
+		}
+		function doAnimation(element){
+			console.log(element);
+			element.removeClass("hiden");
+			element.addClass("showed");
 		}
 
-		$(document).scroll(function(){
-			for (var i = 0; i < elements.length; i++) {
-				var distanceTop = $(elements[i]).offset().top - $(window).height();
-				if  ($(window).scrollTop() > distanceTop) {
-					$(elements[i]).click();
-					$(elements[i]).off('click');
-					elements.splice(i,i+1);
-					break;
-				}
+		$('.scroll').scrollie({
+			scrollOffset: -50,
+			scrollingInView: function(element){
+				doAnimation(element);
 			}
 		});
+
 	} else {
-		$(window).height();
 		$('body').css('background', 'url(images/5-fon-dlya-sayta.jpg)');
 	}
 });
