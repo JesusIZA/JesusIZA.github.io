@@ -1,0 +1,84 @@
+:root{
+	--basis-s: 40%;
+	--basis-z: 2.5;
+	--basis-d: 1s;
+}
+.logo {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: mobile;
+}
+.little-broken-logo, .middle-broken-logo, .broken-logo, .full-logo {
+	position: absolute;
+	top: calc((100% - var(--basis-s)) / 2);
+	right: calc((100% - var(--basis-s)) / 2);
+	width: var(--basis-s);
+	height: var(--basis-s);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: var(--basis-s);
+	opacity: 0;
+
+	animation-name: takeColor;
+	animation-duration: calc(var(--basis-d) / 20 * 3);
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+.full-logo {
+	background-image: url("MyLogo2.png");
+	animation-name: zoomOut;
+	animation-duration: calc(var(--basis-d) / 20 * 17);
+	animation-timing-function: cubic-bezier(.45,.2,.9,.06);
+}
+.little-broken-logo {
+	background-image: url("MyLogo3.png");
+	animation-delay: calc(var(--basis-d) / 20 * 16);
+}
+.middle-broken-logo {
+	background-image: url("MyLogo4.png");
+	animation-delay: calc(var(--basis-d) / 20 * 17);
+}
+.broken-logo {
+	opacity: 1;
+	background-image: url("MyLogo.png");
+	animation-name: loseColorTake;
+	animation-duration: var(--basis-d);
+}
+
+@keyframes zoomOut {
+	0% {
+		opacity: 1;
+		transform: scale(var(--basis-z));
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+@keyframes takeColor {
+	0% {
+		opacity: 1;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes loseColorTake {
+	0% {
+		opacity: 0;
+	}1%{
+		opacity: 0;
+	}
+	94%{
+		opacity: 0;
+	}
+	95%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 1;
+	}
+}
