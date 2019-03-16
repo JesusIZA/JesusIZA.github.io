@@ -151,10 +151,10 @@ header:before{
 	background:url("../images/about.png") center no-repeat;
 }
 .dictionary a:first-child::before {
-	background:url("../images/lessons2.png") center no-repeat;
+	background:url("../images/book.png") center no-repeat;
 }
 .lessons a:first-child::before {
-	background:url("../images/book.png") center no-repeat;
+	background:url("../images/lessons2.png") center no-repeat;
 }
 
 article {
