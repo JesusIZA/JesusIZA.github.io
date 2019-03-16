@@ -280,9 +280,6 @@ footer:before{
 	text-decoration: none;
 	color: var(--panel-color);
 }
-.footer li a[href]{
-	text-indent: 10px;
-}
 .footer li a[href]:hover{
 	color: var(--hover-color);
 }
