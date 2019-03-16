@@ -1,0 +1,201 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+:root{
+	--background-color: #222830;
+	--background-color-t: rgba(34, 40, 48, .5);/*rgba(176, 181, 181, .7);*/
+	--panel-color: rgb(230, 230, 230);
+	--hover-color: #f4841a ;
+}
+body {
+	background-color: var(--background-color);
+}
+header {
+	background-color: var(--background-color);
+	background-image: url("../images/fon.jpg");
+	background-size: 100%;
+	background-position: center;
+	height: 500px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+header:before{
+	content:'';
+	display:block;
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+	height:500px;
+	background: var(--background-color-t);
+}
+.title {
+	width: 60%;
+	height: 300px;
+	background-color: var(--panel-color);
+	position: absolute;
+	top: 100px;
+	right: 0;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+	font-family: MainFont;
+	font-size: 18px;
+	color: var(--background-color);
+	text-align: left;
+}
+.title img {
+	width: 200px;
+	height: 200px;
+	margin: 50px;
+}
+.title span {
+	margin: 50px;
+}
+
+.nav {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	z-index: 100;
+
+	list-style:none;
+	opacity:.5;
+	padding:0;
+	width:50px;
+/*prozorist*/
+	
+	-moz-transition:opacity .3s ease-in-out;
+	-webkit-transition:opacity .3s ease-in-out;
+	-o-transition:opacity .3s ease-in-out;
+	transition:opacity .3s ease-in-out;
+}
+.nav:hover {
+	opacity:1;
+}
+/* Zgortannya i Rozgortannya menu */
+
+.nav li {
+	height:50px;
+	overflow:hidden;
+	width:50px;
+	
+	-moz-transition:width .2s ease-in-out, height .2s ease-in-out .2s;/*vuizd zakladku*/
+	-webkit-transition:width .2s ease-in-out, height .2s ease-in-out .2s;/*vuizd zakladku*/
+	-o-transition:width .2s ease-in-out, height .2s ease-in-out .2s;/*vuizd zakladku*/
+	transition:width .2s ease-in-out, height .2s ease-in-out .2s;/*vuizd zakladku*/
+}
+.nav li:hover {
+	height:215px;
+	width:180px;
+}
+.nav li.full:hover {
+	height:50px;
+}
+
+/* (over)/zgortannya block*/
+.nav li a {
+	background:var(--panel-color);
+	cursor:pointer;
+	display:block;
+	height:40px;
+	line-height:40px;
+	margin:1px;
+	padding-left:15px;
+	width:200px;
+	font-family: MenuFont;
+	font-size: 22px;
+	color: var(--background-color);
+
+	-moz-transition:background .2s ease-in-out;
+	-webkit-transition:background .2s ease-in-out;
+	-o-transition:background .2s ease-in-out;
+	transition:background .2s ease-in-out;
+}
+
+.nav li a:first-child  /*Pershuy el*/ {
+	font-size: 23px;
+	letter-spacing: 1px;
+	height:50px;
+	line-height:50px;
+	position:relative;
+	text-indent:36px;
+	text-transform: uppercase;
+}
+
+.nav li a:first-child::before {
+	content:'';
+	display:block;
+	height:32px;
+	left:9px;
+	position:absolute;
+	top:9px;
+	width:32px;
+}
+.nav li a:hover {
+	background:var(--hover-color);
+}
+
+.main a:first-child::before {
+	background:url("../images/home.png") center no-repeat;
+}
+.service a:first-child::before {
+	background:url("../images/about.png") center no-repeat;
+}
+.dictionary a:first-child::before {
+	background:url("../images/lessons2.png") center no-repeat;
+}
+.lessons a:first-child::before {
+	background:url("../images/book.png") center no-repeat;
+}
+
+article {
+	height: 500px;
+	width: 1000px;
+	margin: 100px auto;
+	margin-bottom: 150px;
+	display: flex;
+	flex-direction: row;
+}
+article div {
+	height: 460px;
+	width: 500px;
+	padding: 20px;
+}
+article div.text {
+	background: var(--panel-color);
+	font-family: MainFont;
+	font-size: 18px;
+	color: var(--background-color);
+	text-align: justify;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+article div.text h2 {
+	margin-bottom: 50px;
+	text-align: center;
+}
+article div.image {
+	background-image: url("../images/fon2.jpg");
+	background-size: 100%;
+	background-position: center;
+}
+
+@font-face {
+	font-family: MenuFont;
+	src: url("CaviarDreams.ttf");
+}
+
+@font-face {
+	font-family: MainFont;
+	src: url("PTC55F.ttf");
+}
