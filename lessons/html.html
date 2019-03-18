@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5 Lessons</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/lesson.css">
+	<link rel="shortcut icon" href="../images/html.png">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<ul class="nav">
+	    <li class="main full">
+	        <a href="../index.html">Головна</a>
+	    </li>
+	    <li class="service full">
+	        <a>Послуги</a>
+	    </li>
+	    <li class="lessons">
+	        <a>Уроки</a>
+	        <a href="lessons/html.html">HTML5</a>
+	        <a>CSS3</a>
+	        <a>JavaScript</a>
+	        <a>jQuery</a>
+	    </li>
+	    <li class="dictionary">
+	        <a>Довідник</a>
+	        <a>HTML5</a>
+	        <a>CSS3</a>
+	        <a>JavaScript</a>
+	        <a>jQuery</a>
+	    </li>
+	</ul>
+	<header>
+	</header>
+	<div class="title">
+		<img class="logo" src="../images/icon.png">
+		<span>HTML5 Уроки</span>
+	</div>
+	<div class="menu">
+		<a href="#l1">1</a>
+		<a href="#l2">2</a>
+		<a href="#l3">3</a>
+		<a href="#l4">4</a>
+		<a href="#l5">5</a>
+		<a href="#l6">6</a>
+		<a href="#l7">7</a>
+		<a href="#l8">8</a>
+	</div>
+	<section>
+		<article class="lesson" id="l1">
+			<div class="lesson-title">
+				<h2 class="lesson-title-name">Урок 1. Вступ</h2>
+				<a class="lesson-title-download" href="data/Lesson1Start.pptx">Завантажити</a>
+			</div>
+			<div class="lesson-info">
+				<span class="lesson-info-text">
+					<p>
+						<strong>HTML</strong> <span class="key-words">(Hyper Text Markup Language)</span> - стандартна мова розмітки веб-сторінок в Інтернеті. Більшість веб-сторінок створюються за допомогою мови HTML. Документ HTML оброблюється браузером та відтворюється на екрані у звичному для людини вигляді
+					</p>
+					<p>
+						Для того, щоб <strong>створити html-документ</strong>, достатньо створити звичайний текстовий файл (документ.txt) і змінити його розширення на html <span class="key-words">(документ.html)
+					</p>
+					<p>
+						<strong>Html-документ</strong> складається з тегів (&lt;відкриваючий тег&gt;&lt;/закриваючий тег&gt;). Корененевий тег має назву html <span class="key-words">(&lt;html&gt;&lt;/html&gt;)</span>. У кореневому є два підтеги head <span class="key-words">(&lt;head&gt;&lt;/head&gt;)</span> та body <span class="key-words">(&lt;body&gt;&lt;/body&gt;)</span>
+					</p>
+					<p>
+						<strong>Тег head</strong> - містить інформацію необхідну браузеру для правильного відображення контетну сторнки (мову, стилі, основні скрипти та інше)
+					</p>
+					<p>
+						<strong>Тег body</strong> - містить контент сторінки (текст, зображення, таблиці тощо)
+					</p>
+					<p class="remark">
+						<strong>Коментарі</strong> (&lt;!--Коментар до коду--&gt;) - спеціальні теги, які браузер не відображає на сторінці, вони слугують, для пояснення коду тому, хто буде його читати (самому розробнику, розробнику, який в подальшому підтримуватиме сайт)
+					</p>
+				</span>
+			</div>
+			<div class="lesson-code">
+				<span class="lesson-code-text">
+<pre>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!--Тестовий код--&gt;
+    Контент сайту
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+				</span>
+				<span class="lesson-code-description">
+					<em>
+						<strong>&lt;meta charset="utf-8"&gt;</strong> - встарновлення кодування сторінки
+					</em>
+				</span>
+			</div>
+		</article>
+		<article class="lesson" id="l2">
+			<div class="lesson-title">
+				<h2 class="lesson-title-name">Урок 2</h2>
+				<a class="lesson-title-download">Завантажити</a>
+			</div>
+			<div class="lesson-info">
+				<span class="lesson-info-text">
+					<p>
+						Text
+					</p>
+					<p class="remark">
+						Text
+					</p>
+				</span>
+			</div>
+			<div class="lesson-code">
+				<span class="lesson-code-text">
+<pre>
+//code
+</pre>
+				</span>
+				<span class="lesson-code-description">
+					<em>
+						Some description
+					</em>
+				</span>
+			</div>
+		</article>
+	</section>
+	<footer>
+		<div class="footer">
+			<span class="refers">
+				<h4>Корисні посилання на безкоштовний контент</h4>
+				<ul>
+					<li>
+						<a>Зображення</a>
+						<a href="https://unsplash.com/" target="blank">unsplash.com</a>
+						<a href="https://picjumbo.com/" target="blank">picjumbo.com</a>
+						<a href="https://www.freepik.com/popular-photos" target="blank">freepik.com</a>
+						<a href="https://ru.pngtree.com/" target="blank">ru.pngtree.com</a>
+						<a href="https://www.dreamstime.com/" target="blank">dreamstime.com</a>
+					</li>				
+					<li>
+						<a>Іконки та логотипи</a>
+						<a href="https://www.flaticon.com/" target="blank">flaticon.com</a>
+						<a href="https://www.iconfinder.com/" target="blank">iconfinder.com</a>
+						<a href="https://www.freepik.com/popular-icons" target="blank">freepik.com</a>
+						<a href="https://ru.pngtree.com/" target="blank">ru.pngtree.com</a>
+					</li>	
+					<li>
+						<a>Підбір кольорів</a>
+						<a href="https://color.romanuke.com/" target="blank">color.romanuke.com</a>
+						<a href="https://www.w3schools.com/colors/colors_picker.asp" target="blank">w3schools.com</a>
+					</li>			
+					<li>
+						<a>Шрифти</a>
+						<a href="https://ru.pngtree.com/" target="blank">ru.pngtree.com</a>
+					</li>				
+					<li>
+						<a>Код</a>
+						<a href="https://www.w3schools.com/" target="blank">w3schools.com</a>
+					</li>
+				</ul>
+			</span>
+			<span class="contacts">
+				<address>NeverSayDie.JR@gmail.com</address>
+			</span>
+		</div>
+	</footer>
+	
+</body>
+</html>
