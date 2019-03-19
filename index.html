@@ -3,118 +3,60 @@
 <head>
 	<title>NeverSayDie.JR</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/start.css">
-	<link rel="shortcut icon" href="images/icon.png">
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/scroll.css">
+	<link rel="shortcut icon" href="images/logo3.png">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2542/jquery.scrollie.min_3.js"></script>﻿
+	<script type="text/javascript" src="scripts/scroll.js"></script>
 </head>
 <body>
-	<ul class="nav">
-	    <li class="main full">
-	        <a href="#">Головна</a>
-	    </li>
-	    <li class="service full">
-	        <a>Послуги</a>
-	    </li>
-	    <li class="lessons">
-	        <a>Уроки</a>
-	        <a href="lessons/html.html">HTML5</a>
-	        <a>CSS3</a>
-	        <a>JavaScript</a>
-	        <a>jQuery</a>
-	    </li>
-	    <li class="dictionary">
-	        <a>Довідник</a>
-	        <a>HTML5</a>
-	        <a>CSS3</a>
-	        <a>JavaScript</a>
-	        <a>jQuery</a>
-	    </li>
-	</ul>
 	<header>
+		<img id="anim" src="images/logo3.png">
+		<img id="anim2" src="images/logo3.png">
+		<img src="images/logo2.1.png">
+		<h1>Never Say Die</h1>
 	</header>
-	<div class="title">
-		<img class="logo" src="images/icon.png">
-		<span>HTML5, CSS3, JavaScript, jQuery - шлях веб-програміста початківця</span>
-	</div>
-	<section>
-		<a href="https://uk.wikipedia.org/wiki/HTML" target="blank">
-			<article>
-				<div class="text">
-					<h2>hyper text markup language 5</h2>
-					<p>Стандартна мова розмітки веб-сторінок в Інтернеті. Більшість веб-сторінок створюються за допомогою мови HTML. Документ HTML оброблюється браузером та відтворюється на екрані у звичному для людини вигляді</p>
-				</div>
-				<div class="image html"></div>
-			</article>
-		</a>
-		<a href="https://uk.wikipedia.org/wiki/CSS" target="blank">
-			<article>
-				<div class="image css"></div>
-				<div class="text">
-					<h2>cascading style sheets 3</h2>
-					<p>Спеціальна мова, що використовується для опису зовнішнього вигляду сторінок, написаних мовами розмітки даних. Найчастіше CSS використовують для візуальної презентації сторінок, написаних на HTML, але формат CSS може застосовуватися до інших видів документів</p>
-				</div>
-			</article>
-		</a>
-		<a href="https://uk.wikipedia.org/wiki/JavaScript" target="blank">
-			<article>
-				<div class="text">
-					<h2>java script</h2>
-					<p>Динамічна, об'єктно-орієнтована прототипна мова програмування. Найчастіше використовується для створення сценаріїв веб-сторінок, що надає можливість на стороні клієнта (пристрої кінцевого користувача) взаємодіяти з користувачем, змінювати структуру та зовнішній вигляд веб-сторінки</p>
-				</div>
-				<div class="image js"></div>
-			</article>
-		</a>
-		<a href="https://uk.wikipedia.org/wiki/JQuery" target="blank">
-			<article>
-				<div class="image jquery"></div>
-				<div class="text">
-					<h2>jQuery</h2>
-					<p>Популярна JavaScript-бібліотека з відкритим початковим кодом. Вона була представлена у січні 2006 року у BarCamp NYC Джоном Ресіґом (John Resig). Згідно з дослідженнями організації W3Techs, JQuery використовується понад половиною від мільйона найвідвідуваніших сайтів</p>
-				</div>
-			</article>
-		</a>
-	</section>
-	<footer>
-		<div class="footer">
-			<span class="refers">
-				<h4>Корисні посилання на безкоштовний контент</h4>
-				<ul>
-					<li>
-						<a>Зображення</a>
-						<a href="https://unsplash.com/" target="blank">unsplash.com</a>
-						<a href="https://picjumbo.com/" target="blank">picjumbo.com</a>
-						<a href="https://www.freepik.com/popular-photos" target="blank">freepik.com</a>
-						<a href="https://ru.pngtree.com/" target="blank">ru.pngtree.com</a>
-						<a href="https://www.dreamstime.com/" target="blank">dreamstime.com</a>
-					</li>				
-					<li>
-						<a>Іконки та логотипи</a>
-						<a href="https://www.flaticon.com/" target="blank">flaticon.com</a>
-						<a href="https://www.iconfinder.com/" target="blank">iconfinder.com</a>
-						<a href="https://www.freepik.com/popular-icons" target="blank">freepik.com</a>
-						<a href="https://ru.pngtree.com/" target="blank">ru.pngtree.com</a>
-					</li>	
-					<li>
-						<a>Підбір кольорів</a>
-						<a href="https://color.romanuke.com/" target="blank">color.romanuke.com</a>
-						<a href="https://www.w3schools.com/colors/colors_picker.asp" target="blank">w3schools.com</a>
-					</li>			
-					<li>
-						<a>Шрифти</a>
-						<a href="https://ru.pngtree.com/" target="blank">ru.pngtree.com</a>
-					</li>				
-					<li>
-						<a>Код</a>
-						<a href="https://www.w3schools.com/" target="blank">w3schools.com</a>
-					</li>
+	<div id="content">
+		<center>
+			<div>
+				<p id="dev" class="scroll">Development</p>
+				<ul class="dev">
+					<li class="scroll">One-page website business card</li>
+					<li class="scroll">Multi-page information sites</li>
 				</ul>
-			</span>
-			<span class="contacts">
-				<address>NeverSayDie.JR@gmail.com</address>
-			</span>
-		</div>
+			</div>
+			<div>
+				<p id="course" class="scroll">Courses with a tutor</p>
+				<ul class="course">
+					<li class="scroll">Java basic</li>
+					<li class="scroll">Java database</li>
+					<li class="scroll">JavaScript basic</li>
+					<li class="scroll">JavaScript full</li>
+					<li class="scroll">jQuery</li>
+					<li class="scroll">PHP basic</li>
+					<li class="scroll">PHP full</li>
+					<li class="scroll">Python basic</li>
+					<li class="scroll">HTML5 standard</li>
+					<li class="scroll">CSS3 full</li>
+				</ul>
+			</div>
+		</center>
+	</div>
+	<footer>
+		<span id="contacts">
+			<p>Emails:</p>
+			<em>NeverSayDie.JR@gmail.com</em>
+			<em>SofiaPikuza@gmail.com</em>
+		</span>
+		<span id="about">
+			<em>2018 Kiev UA</em>
+			<em>NeverSayDie.JR</em>
+			<img src="images/logo.png">
+		</span>
 	</footer>
-	
+	<div id="start">
+		<img src="images/logo3.png">
+	</div>
 </body>
 </html>
