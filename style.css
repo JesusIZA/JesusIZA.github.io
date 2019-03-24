@@ -274,7 +274,7 @@ footer span * {
 	menu li {
 		font-size: 30px;
 	}
-	.images{
+	.images img, .images{
 		display: none;
 		width: 0;
 		height: 0;
