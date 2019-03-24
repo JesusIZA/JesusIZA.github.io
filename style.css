@@ -119,8 +119,11 @@ section article {
 section article h2 {
 	font-size: 38px;
 	text-align: center;
-	margin: 22px;
+	margin: 80px 10px;
 	font-family: NameFont;
+}
+section article div {
+	margin: 60px 0;
 }
 section article div .name {
 	display: flex;
