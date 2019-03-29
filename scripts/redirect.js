@@ -1,4 +1,4 @@
-if(window.innerWidth > window.innerHeight && window.innerWidth >= 1200) {
+if(window.innerWidth > window.innerHeight && window.innerWidth >= 1100) {
 	window.location.href = "pc.html";
 } else {
 	console.log(window.innerWidth);
