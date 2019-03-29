@@ -23,7 +23,7 @@ body {
 	overflow: hidden;
 	color: white;
 	max-width: 1800px;
-	min-width: 1100px;
+	min-width: 1190px;
 	margin: 0 auto;
 	position: relative;
 
@@ -65,7 +65,7 @@ header .top-bar {
 	        align-items: center;
 	overflow: hidden;
 	position: relative;
-	min-width: 1100px;
+	min-width: 1190px;
 	max-width: 1800px;
 	z-index: 100;
 	margin: 0 auto;
