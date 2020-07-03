@@ -1,9 +1,0 @@
-/***appeare***/
-.feed {
-	transform: scale(1.1);
-	transition: .5s;
-	transition-timing-function: cubic-bezier(.45,.2,.9,.06);
-}
-.feed.appeared {
-	transform: scale(1);
-}
