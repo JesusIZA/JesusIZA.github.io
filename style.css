@@ -1,227 +1,163 @@
-body {
-	font-family: SIK;
-	font-size: 35px;
+body{
+	font-family: fontgr;
+	margin: 0;
 	padding: 0;
-	margin: 0;
-	background: fixed url(f1.jpg) top no-repeat;
-	background-size: 100%;
+	background: fixed url(./images/fon.jpg) no-repeat center;
 }
-header {
-	text-align: center;
-	font-size: 2.7em;
-	background: -webkit-linear-gradient(left, white, white, transparent, white, white);
+header{
 	margin: 0;
+	padding: 0;
 	width: 100%;
+	height: 90px;
 }
-h1 {
-	line-height: 120px;
-	margin: 0 auto;
-	padding: 0;
-	padding-top: 20px;
-	width: 80%;
+h1{
+	letter-spacing: 10px;
+	text-align: right;
+	line-height: 80px;
+	font-style: italic;
+	font-size: 50px;
+	color: black;
+	margin: 0;
+	float:right;
 }
-h1:hover {
-	animation-name: head1;
-	transform-origin: 50% -100px;
+#leaf{
+	float:left;
+	animation: anim 15s linear 1s;
 	animation-iteration-count: infinite;
-	animation-duration: 2s;
-	animation-timing-function: linear;
+	transition: transform 10s linear 2s;
 }
-#menu {
-	text-align: center;
-	background: -webkit-linear-gradient(left, transparent, #333, transparent);
-	margin: 7px 0;
+@keyframes anim{
+	0%{ 
+		transform: rotate(180deg);}
+	10%{
+		transform: scale(1.1) translate(50px, 100px);}
+	20%{
+		transform: scale(1.2) translate(100px, 200px) rotate(180deg);}
+	30%{
+		transform: scale(1.3) translate(150px, 300px);}
+	40%{
+		transform: scale(1.4) translate(200px, 400px)rotate(180deg);}
+	50%{
+		transform: scale(1.5) translate(250px, 500px);}
+	60%{
+		transform: scale(1.6) translate(300px, 600px)rotate(180deg);}
+	70%{
+		transform: scale(1.7) translate(350px, 700px);}
+	80%{
+		transform: scale(1.8) translate(400px, 800px)rotate(180deg);}
+	90%{
+		transform: scale(1.9) translate(450px, 900px);}
+	100%{
+		transform: scale(2) translate(500px, 900px)rotate(180deg);}
 }
 menu {
 	margin: 0;
 	padding: 0;
+	width: 100%;
 }
-a {
-	text-decoration: none;
-	color: white;
-	transition: color .4s;
-}
-li {
-	list-style: none;
-	display: inline-block;
-	margin: 5px 30px;
-	font-size: 1.2em;
-	transition: transform .6s;
-}
-li a:hover, li:hover {
-	color: red;
-	transform: scale(1.2);
-}
-#content {
-	width: 80%;
-	background: rgba(50,50,50, .8);
+#menu{
 	text-align: center;
-	margin: 70px auto;
-	padding: 30px;
+	background: grey;
+	margin:0;
 }
-#content:hover h2 {
-	text-shadow: 0 3px 10px red;
-}
-#content:hover a {
-	transform: translate(-30px, 0);
-	background: rgba(255, 153, 0, .3);
-	border: 2px solid rgb(255, 153, 0);
-}
-#content:hover a:last-child {
-	transform: translate(30px, 0);
-	background: rgba(0, 255, 204, .3);
-	border: 2px solid rgb(0, 255, 204);
-}
-h2 {
-	font-size: 3em;
-	color: orange;
-	transition: text-shadow .3s;
-	margin: 0;
-	line-height: 80px;
-	margin-bottom: 50px;
-}
-#content div a {
+li{
 	display: inline-block;
-	height: 48px;
-	line-height: 48px;
-	width: 100px;
-	background: rgba(255, 50, 50, .3);
-	border: 2px solid rgb(255, 50, 50);
-	transition: background .2s, transform .7s linear;
+	width: 180px;
+	line-height: 39px;
+	list-style: none;
+	font-size: 28px;
+	text-align: center;
+	margin: 0px 20px;
+	letter-spacing: 10px;
+	background: -webkit-linear-gradient(top, rgb(192, 191, 191), rgba(192, 191, 191, .1));
 }
-#content div a:hover {
-	background: rgba(255, 153, 0, .6);
+li:hover{
+	background: -webkit-linear-gradient(bottom, rgb(192, 191, 191), rgba(192, 191, 191, .1));
+	cursor: pointer;
 }
-#content div a:last-child:hover {
-	background: rgba(0, 255, 204, .6);
+li a:active{
+	color:black;
+}
+li a{
+	text-decoration: none;
+	color: rgb(0, 100, 0);
+}
+#content{
+	margin: 0;
+	padding: 0;
+}
+#cont{
+	background: -webkit-linear-gradient(top, rgb(192, 191, 191), rgba(192, 191, 191, .1));
+	height: 500px;
+	border-bottom: 1px solid grey;
+	margin: 0;
+	position: relative;
+}
+#cont h3{
+	position: absolute;
+	top:25%;
+	left: 25%;
+	text-align: center;
+	font-weight:bold;
+	font-size: 70px;
+}
+#content img, #content .text{
+	display: inline-block;
+	width: 337px;
+	height: 300px;
+	margin:  10px 5px;
+	padding: 0;
+}
+#photos{
+	text-align: center;
+	padding: 0;
+	width: 100%;
+}
+.text{
+	text-align: center;
+	vertical-align: top;
+}
+.text:nth-child(2){
+	background-color:rgba(0, 100, 0,.8);
+}
+.text:nth-child(4){
+	background-color:rgba(0, 128, 0,.8);
+}
+.text:nth-child(6){
+	background-color:rgba(34, 139, 34,.8);
+}
+.text:nth-child(8){
+	background-color:rgba(46, 139, 87,.8);
+}
+img{
+	transition: transform .8s linear; 
+}
+img:hover{
+	transform: scale(.9);
+}
+em{
+	font-size: 80px;
 }
 footer{
-	background: rgba(255, 255, 255, .6);
+	border-top: 1px solid grey;
+	line-height: 70px;
+	margin: 0;
+}
+p{
 	text-align: center;
-}
-#f1, #f2, #f3, #f4 {
-	display: inline-block;
-	width: 24%;
-	text-align: center;
-	transition: background .3s;
-	padding-bottom: 10px;
-}
-#f1:hover, #f2:hover, #f3:hover, #f4:hover {
-	background: rgba(0,0,200,.3);
-	cursor: pointer;
-}
-#f1:active, #f2:active, #f3:active, #f4:active {
-	background: rgba(255,0,0,.5);
-}
-footer img, footer em {
-	display: block;
-}
-footer img {
-	height: 100px;
-	margin: 10px auto;
-}
-#button {
-	position: fixed;
-	top: 18px;
-	right: 20px;
-	width: 99px;
-	height: 99px;
-	border-radius: 50%;
-	background: url(1.png);
-	background-size: 99px 99px;
-	animation-name: click;
-	animation-iteration-count: infinite;
-	animation-duration: 1s;
-}
-#button:hover {
-	cursor: pointer;
-	animation-duration: .5s;
-}
-
-#backgB {
-	position: fixed;
-	top: 12px;
-	right: 15px;
-	width: 110px;
-	height: 110px;
-	border-radius: 50%;
-	background: rgba(0, 0, 100, .5);
+	color:green;
 }
 @font-face {
-	font-family: SIK;
+	font-family: fontgr;
 	src: url(normal.ttf);
 }
 @font-face {
-	font-family: SIK;
+	font-family: fontgr;
 	src: url(italic.ttf);
 	font-style: italic;
 }
 @font-face {
-	font-family: SIK;
+	font-family: fontgr;
 	src: url(bold.ttf);
 	font-weight: bold;
-}
-@keyframes head1 {
-	0%{
-		transform: rotate(0);
-	}
-	25%{
-		transform: rotate(-10deg);
-	}
-	75%{
-		transform: rotate(10deg);
-	}
-	100%{
-		transform: rotate(0);
-	}
-}
-@media only screen and (min-height: 1000px) {
-	body {
-		background-image: url(f1.jpg);
-	}
-	#content {
-		margin: 35% auto;
-		height: 30%;
-	}
-}
-@keyframes click {
-	0%{
-		transform: scale(1);
-	}
-	25%{
-		transform: scale(0.95);
-	}
-	100%{
-		transform: scale(1);
-	}
-}
-@keyframes click2 {
-	0%{
-		transform: scale(1.7);
-	}
-	100%{
-		transform: scale(1);
-	}
-}
-footer span {
-	position: relative;
-}
-.efect {
-	display: none;
-	position: absolute;
-	left: 21%;
-}
-footer span:active .efect {
-	display: block;
-	animation-name: fly;
-	animation-iteration-count: infinite;
-	animation-duration: 1s;
-}
-@keyframes fly {
-	0%{
-		transform: translate(0, 0) scale(1);
-	}
-	100%{
-		transform: translate(0, -200px) scale(.2);
-	}
 }
